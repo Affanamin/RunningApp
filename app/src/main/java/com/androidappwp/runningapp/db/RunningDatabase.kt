@@ -10,10 +10,7 @@ import androidx.room.TypeConverters
     version = 1
 )
 @TypeConverters(Converters::class)
-abstract class RunningDatabase: RoomDatabase() {
+abstract class RunningDatabase : RoomDatabase() {
 
-    //abstract fun getRunDao(): RunDao
-
-    // The Reason why this class is so very lite in comparison with news app , is because that we are using dragger Dependency Injections in
-    // this project while we haven't used this in newsapp.. Dragger can take of the other code down here
+    abstract fun getRunDao(): RunDAO
 }
