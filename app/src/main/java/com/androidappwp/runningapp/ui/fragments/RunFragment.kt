@@ -2,10 +2,14 @@ package com.androidappwp.runningapp.ui.fragments
 
 
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import com.androidappwp.runningapp.R
+import com.androidappwp.runningapp.ui.viewmodels.MainViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
+class RunFragment : Fragment(R.layout.fragment_run) {
 
-class RunFragment : Fragment() {
-
-
+    private val viewModel: MainViewModel by viewModels()
 
 }
