@@ -1,6 +1,6 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">RunningApp</string>
-    <string name="google_maps_key">AIzaSyCeNUVhk5bBUbW_WxJiP7FEEyd0K8XvM3A</string>
+<!--    <string name="google_maps_key">AIzaSyCeNUVhk5bBUbW_WxJiP7FEEyd0K8XvM3A</string>-->
     <string name="WelcomeString">Welcome!\nPlease enter your name and weight</string>
 
     <string-array name="filter_options">
@@ -11,5 +11,6 @@
         <item>Calories Burned</item>
     </string-array>
 
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCeNUVhk5bBUbW_WxJiP7FEEyd0K8XvM3A</string>
 
 </resources>
