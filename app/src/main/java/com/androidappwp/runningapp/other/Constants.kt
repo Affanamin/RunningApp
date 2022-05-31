@@ -1,5 +1,7 @@
 package com.androidappwp.runningapp.other
 
+import android.graphics.Color
+
 object Constants {
 
     const val RUNNING_DATABASE_NAME = "running_db"
@@ -14,4 +16,10 @@ object Constants {
     const val NOTIFICATION_ID = 1  // atleast to one
 
     const val ACTION_SHOW_TRACKING_FRAGMENT = "ACTION_SHOW_TRACKING_FRAGMENT"
+
+    const val LOCATION_UPDATE_INTERVAL = 5000L
+    const val FASTEST_LOCATION_INTERVAL = 2000L
+    const val POLY_LINE_COLOR = Color.RED
+    const val POLY_LINE_WIDTH = 8f
+    const val MAP_ZOOM = 15f
 }
