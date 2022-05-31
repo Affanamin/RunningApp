@@ -1,8 +1,11 @@
 package com.androidappwp.runningapp.ui.viewmodels
 
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.androidappwp.runningapp.db.Run
 import com.androidappwp.runningapp.repositories.MainRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 
@@ -13,6 +16,10 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(
     val mainRepository: MainRepository
 ): ViewModel(){
+
+    fun insertRun(run: Run) = viewModelScope.launch {
+        mainRepository.insertRun(run)
+    }
 
 // We do not want to add viewmodel factory class here because this will all be handled by dagger hilt behind the scenes. We just use
 // @HiltViewModel
